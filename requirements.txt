@@ -1,0 +1,44 @@
+# =============================================================================
+# VERISHEAF — Python dependencies
+# =============================================================================
+#
+# Pinned to versions tested during manuscript preparation (June 2026).
+# Install with:  pip install -r requirements.txt
+#
+# NOTE: This installs CPU-only PyTorch. For CUDA-enabled PyTorch, install the
+# appropriate build first from https://pytorch.org/get-started/locally/ and
+# then install the remaining dependencies:
+#
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+#   pip install -r requirements.txt
+#
+# The CUDA build will not be overwritten if already present.
+# =============================================================================
+
+# --- Core numerical and scientific computing ---------------------------------
+numpy>=1.24.0,<2.0.0
+scipy>=1.11.0,<1.15.0
+
+# --- PyTorch (CPU-only default; see note above for CUDA) --------------------
+torch>=2.1.0,<2.6.0
+
+# =============================================================================
+# No additional third-party packages are required. The codebase uses only:
+#
+#   Standard library:  argparse, csv, dataclasses, datetime, enum, hashlib,
+#                      json, math, os, pathlib, random, sys, time, traceback,
+#                      typing
+#
+#   numpy:             Array operations, random number generation, linear
+#                      algebra primitives
+#
+#   scipy:             scipy.sparse (sparse sheaf Laplacian construction),
+#                      scipy.sparse.linalg (Lanczos eigendecomposition for
+#                      Theorem 3 spectral approximation),
+#                      scipy.stats (Wilcoxon signed-rank test, bootstrap CI)
+#
+#   torch:             SheafLearner neural module (torch.nn), optimiser
+#                      (AdamW), scheduler (CosineAnnealingWarmRestarts),
+#                      baseline model architectures, CUDA device management,
+#                      determinism enforcement (cuDNN flags, manual_seed_all)
+# =============================================================================
