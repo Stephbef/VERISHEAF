@@ -237,18 +237,6 @@ CLI orchestrator. Four subcommands (`quick`, `incident`, `warehouse`, `verify`) 
 
 ## Citation
 
-If you use this framework or the associated experimental results, please cite the following:
-
-```bibtex
-@inproceedings{verisheaf2025,
-  title     = {{VERISHEAF}: Cellular Sheaf Cohomology for End-to-End
-               Verifiability of Blockchain-Based Voting Governance},
-  booktitle = {Proc. 25th IEEE Int. Conf. Data Mining (ICDM)},
-  year      = {2025},
-  address   = {Washington, DC, USA}
-}
-```
-
 The warehouse corpus is derived from:
 
 ```bibtex
